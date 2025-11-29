@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-primary: #1a1a1a;
+        --color-secondary: #555555;
+        --color-accent: #3b82f6;
+        --color-background: #f9fafb;
+        --color-surface: #ffffff;
+        --color-separator: #e5e7eb;
+        --color-attention: #f63e3b;
+        --font-worksans: "Work Sans", sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--color-background);
+        font-family: var(--font-main);
+        color: var(--color-primary);
+        display: flex;
+        min-height: 100vh;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ul,
+      li {
+        font-family: var(--font-worksans);
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .font-primary {
+        color: var(--color-primary);
+      }
+
+      .font-secondary {
+        color: var(--color-secondary);
+      }
+
+      .font-surface {
+        color: var(--color-surface);
+      }
+
+      .text-display-large {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.005em;
+      }
+      .text-display-medium {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.005em;
+      }
+      .text-display-small {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.002em;
+      }
+      .text-body-paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+      }
+      .text-body-small {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+      }
+
+      .profile-sidebar {
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        gap: 8px;
+        background-color: var(--color-secondary);
+        padding: 12px;
+        width: fit-content;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      .divider {
+        border: none;
+        height: 1px;
+        margin: 16px 0;
+      }
+
+      .divider.light {
+        background-color: var(--color-separator);
+      }
+      .divider.dark {
+        background-color: var(--color-primary);
+      }
+
+      .main-content {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        padding: 12px 24px;
+      }
+
+      .section-block {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    </style>
+    <title>Resume SHPP-1.1.1</title>
+  </head>
+  <body>
+    <aside class="profile-sidebar font-surface">
+      <div class="section-block">
+        <h2 class="text-display-medium">Education</h2>
+        <ul>
+          <li>Robert Elvorti Institute</li>
+          <li>SHPP Computer Science Course</li>
+          <li>SHPP Backend Course</li>
+        </ul>
+      </div>
+
+      <hr class="divider light" />
+
+      <div class="section-block">
+        <h2 class="text-display-medium">Certificates</h2>
+        <ul>
+          <li>SHPP Computer Science Course</li>
+          <li>SHPP Backend Course</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content font-primary">
+      <h1 class="text-display-large">Igor</h1>
+
+      <hr class="divider dark" />
+
+      <div>
+        <h3 class="text-display-small">Summary</h3>
+        <p class="text-body-paragraph">
+          Student from Robert Elvorti Institute and SHPP, i like programming,
+          and sleeping
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
